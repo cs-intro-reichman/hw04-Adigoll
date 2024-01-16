@@ -118,7 +118,7 @@ public class StringOps
         }
         int[] arr = new int[arrLength];
         arr[0] = tempArr[0];
-        for (int j = 1; (j <= tempArr.length) && (tempArr[j] != 0); j++)
+        for (int j = 1; (j < tempArr.length) && (tempArr[j] != 0); j++)
         {
             arr[j] = tempArr[j];
         }
