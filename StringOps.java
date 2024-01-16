@@ -106,20 +106,11 @@ public class StringOps
 
     public static int[] allIndexOf (String string, char chr) 
     {
-        char chr1;
         int arrLength = 0;
         int[] tempArr = new int[string.length()];
-        if (chr >= 'A' && chr <= 'Z')
-        {
-            chr1 = (char)((int)(chr) + 32);
-        }
-        else
-        {
-            chr1 = (char)((int)(chr) - 32);
-        }
         for (int i = 0; i < string.length(); i++)
         {
-            if (string.charAt(i) == chr || string.charAt(i) == chr1)
+            if (string.charAt(i) == chr)
             {
                 tempArr[arrLength] = i;
                 arrLength++;
