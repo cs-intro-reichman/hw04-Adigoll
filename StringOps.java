@@ -26,7 +26,7 @@ public class StringOps
     {
         //capVowelsLowRest("ALL YOU NEED IS LOVE");
         //camelCase(" tWo  wordS ");
-        allIndexOf("MMMM", 'm');
+        allIndexOf("MMM", 'M');
     }
 
     public static String capVowelsLowRest (String string) 

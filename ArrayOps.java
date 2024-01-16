@@ -27,7 +27,7 @@ public class ArrayOps
             }
             isNum = false;
         }
-        return -1;
+        return 1;
     }
 
     public static int secondMaxValue(int [] array) 
