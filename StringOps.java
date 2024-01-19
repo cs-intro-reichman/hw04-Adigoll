@@ -37,9 +37,15 @@ public class StringOps
 		int charAsc;
 		for (int i = 0; i < string.length(); i++)
 		{
+			// Bad indentation 
 			charAsc = string.charAt(i);
             ch = string.charAt(i);
 			if (charAsc >= 65 && charAsc <= 90)
+
+		/* 
+  		why didn't you create a helper isVowel()?
+		could be a lot cleaner
+  		*/
 			{
                 if (!(string.charAt(i) == 'A' || string.charAt(i) == 'E' || string.charAt(i) == 'I' || string.charAt(i) == 'O' || string.charAt(i) == 'U'))
                 {
@@ -49,6 +55,7 @@ public class StringOps
 			}
 			else
 			{
+
                 if (string.charAt(i) == 'a' || string.charAt(i) == 'e' || string.charAt(i) == 'i' || string.charAt(i) == 'o' || string.charAt(i) == 'u')
                 {
                     charAsc = charAsc - 32;
@@ -87,6 +94,9 @@ public class StringOps
                     {
                         newWord += word.charAt(t);
                     }
+		/*
+  		for inside an if inside an if-else inside a for, to complex.
+   		 */
                 }
                 else
                 {
@@ -139,6 +149,10 @@ public class StringOps
 		for (i = 0; i < s.length(); i++)
 		{
 			charAsc = s.charAt(i);
+			/* 
+	  		why didn't you create a helper isLetter()?
+			could be a lot more readable.
+	  		*/
 			if (charAsc >= 65 && charAsc <= 90)
 			{
 				charAsc = charAsc + 32;
